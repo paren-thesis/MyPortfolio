@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Ash Charcoal */
+    color: #ffffff;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2c3e50; /* Shaded Blue */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom-right-radius: 30px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #61dafb; /* Light Blue */
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+nav .nav-links a:hover {
+    color: #61dafb; /* Light Blue */
+}
+
+/* Home Section */
+.home-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+    text-align: center;
+}
+
+.home-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.home-section .btn {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.home-section .btn:hover {
+    background-color: #4fa3c7;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 80px 20px;
+    background-color: #2c3e50;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+    background-color: #4fa3c7;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 80px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    background-color: #2c3e50;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #4fa3c7;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
