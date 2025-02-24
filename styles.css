@@ -17,7 +17,6 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom-right-radius: 30px;
 }
 
 nav .logo {
@@ -39,8 +38,6 @@ nav .nav-links a {
     text-decoration: none;
     color: #ffffff;
     transition: color 0.3s;
-    font-size: 20px;
-    font-weight: 550;
 }
 
 nav .nav-links a:hover {
@@ -51,34 +48,49 @@ nav .nav-links a:hover {
 .home-section {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
     background: linear-gradient(135deg, #2c3e50, #1a1a1a);
-    text-align: center;
 }
 
-.home-section h1 {
+.home-content {
+    max-width: 50%;
+}
+
+.home-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
 
-.home-section p {
+.home-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #61dafb; /* Light Blue */
+}
+
+.home-content p {
     font-size: 24px;
     margin-bottom: 40px;
 }
 
-.home-section .btn {
+.home-content .btn {
     padding: 10px 20px;
     background-color: #61dafb;
     color: #1a1a1a;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 20px;
     transition: background-color 0.3s;
 }
 
-.home-section .btn:hover {
+.home-content .btn:hover {
     background-color: #4fa3c7;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* About Section */
@@ -90,77 +102,34 @@ nav .nav-links a:hover {
 
 .about-section h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.about-section p {
-    font-size: 18px;
-    max-width: 800px;
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Projects Section */
-.projects-section {
-    padding: 80px 20px;
-    background-color: #2c3e50;
-    text-align: center;
+.about-text {
+    max-width: 50%;
+    text-align: left;
 }
 
-.projects-section h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-card h3 {
+.about-text h3 {
     font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    font-size: 16px;
     margin-bottom: 20px;
 }
 
-.project-card a {
-    padding: 10px 20px;
-    background-color: #61dafb;
-    color: #1a1a1a;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.about-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.project-card a:hover {
-    background-color: #4fa3c7;
-}
-
-/* Skills Section */
-.skills-section {
-    padding: 80px 20px;
-    background-color: #1a1a1a;
-    text-align: center;
-}
-
-.skills-section h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+.about-skills {
+    max-width: 40%;
 }
 
 .skills-grid {
@@ -181,10 +150,122 @@ nav .nav-links a:hover {
     transform: translateY(-10px);
 }
 
+/* Services Section */
+.services-section {
+    padding: 80px 20px;
+    background-color: #2c3e50;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Resume Section */
+.resume-section {
+    padding: 80px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.resume-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.resume-content a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.resume-content a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 80px 20px;
+    background-color: #2c3e50;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.portfolio-card a {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-card a:hover {
+    background-color: #4fa3c7;
+}
+
 /* Contact Section */
 .contact-section {
     padding: 80px 20px;
-    background-color: #2c3e50;
+    background-color: #1a1a1a;
     text-align: center;
 }
 
@@ -206,7 +287,7 @@ nav .nav-links a:hover {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #1a1a1a;
+    background-color: #2c3e50;
     color: #ffffff;
 }
 
@@ -227,7 +308,7 @@ nav .nav-links a:hover {
 /* Footer */
 footer {
     padding: 20px;
-    background-color: #1a1a1a;
+    background-color: #2c3e50;
     text-align: center;
 }
 
